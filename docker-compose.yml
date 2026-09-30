@@ -1,0 +1,40 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ctas_storage:/app/storage
+      - ./models:/app/models:ro
+    environment:
+      - CTAS_STORAGE_DIR=/app/storage
+      - CTAS_MODEL_PATH=/app/models/default_model.pt
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  # --- optional production services (uncomment to enable) ---
+  # postgres:
+  #   image: postgres:16
+  #   environment:
+  #     POSTGRES_USER: ctas
+  #     POSTGRES_PASSWORD: changeme
+  #     POSTGRES_DB: ctas
+  #   volumes:
+  #     - pgdata:/var/lib/postgresql/data
+  # redis:
+  #   image: redis:7-alpine
+
+volumes:
+  ctas_storage:
+  # pgdata:
