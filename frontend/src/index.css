@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background: #0a1128;
+  color: #e6ecf5;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #0d1530; }
+::-webkit-scrollbar-thumb { background: #24365e; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #31487e; }
+
+.panel {
+  background: linear-gradient(160deg, #101b3a 0%, #0c1430 100%);
+  border: 1px solid #1e2f5c;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+}
+
+.panel-title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8fa3c8;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all 0.15s;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.btn-primary { background: #2563eb; color: white; box-shadow: 0 0 12px rgba(37, 99, 235, 0.45); }
+.btn-primary:hover { background: #1d4ed8; }
+.btn-ghost { background: #16224a; color: #c7d4ee; border-color: #24365e; }
+.btn-ghost:hover { background: #1c2c5c; }
+.btn-danger { background: #b91c1c; color: white; }
+.btn-danger:hover { background: #991b1b; }
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+.input, .select {
+  background: #0d1530;
+  border: 1px solid #24365e;
+  border-radius: 8px;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.85rem;
+  color: #e6ecf5;
+  width: 100%;
+}
+.input:focus, .select:focus { outline: none; border-color: #3b82f6; }
+
+.status-dot { width: 10px; height: 10px; border-radius: 9999px; display: inline-block; }
+.status-live { background: #22c55e; box-shadow: 0 0 8px #22c55e; animation: pulse 1.6s infinite; }
+.status-paused { background: #f59e0b; box-shadow: 0 0 8px #f59e0b; }
+.status-offline { background: #64748b; }
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+.ev-INFO { border-left-color: #3b82f6; }
+.ev-LOW { border-left-color: #22c55e; }
+.ev-MEDIUM { border-left-color: #f59e0b; }
+.ev-HIGH { border-left-color: #ef4444; }
