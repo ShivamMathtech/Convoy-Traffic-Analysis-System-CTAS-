@@ -1,0 +1,61 @@
+{
+  "model": {
+    "model_path": "F:\\pj\\CTAS_Production\\models\\default_model.pt",
+    "device": "cpu",
+    "imgsz": 640,
+    "conf": 0.35,
+    "iou": 0.45
+  },
+  "tracker": {
+    "name": "botsort",
+    "max_age": 30,
+    "min_hits": 3,
+    "iou_threshold": 0.3,
+    "low_conf_threshold": 0.1
+  },
+  "video": {
+    "mode": "realtime",
+    "frame_interval": 1,
+    "max_width": 1280
+  },
+  "calibration": {
+    "units": "pixels",
+    "image_points": [],
+    "world_points": []
+  },
+  "groups": {
+    "dmax": 35,
+    "hmax_deg": 15,
+    "tmin_sec": 2,
+    "min_vehicles": 2,
+    "enabled": true
+  },
+  "events": {
+    "stopped_speed_kmh": 2,
+    "stopped_seconds": 3,
+    "spacing_warn_m": 5,
+    "congestion_density": 25,
+    "congestion_seconds": 10,
+    "enabled": {
+      "vehicle_entered": true,
+      "vehicle_exited": true,
+      "lane_change": true,
+      "group_formation": true,
+      "stopped_vehicle": true,
+      "spacing_threshold": true,
+      "congestion": true,
+      "stream": true
+    }
+  },
+  "storage": {
+    "output_dir": "F:\\pj\\CTAS_Production\\CTAS\\storage\\outputs",
+    "auto_cleanup_days": 30
+  },
+  "ui": {
+    "show_trajectories": true,
+    "trajectory_seconds": 5,
+    "show_labels": true,
+    "show_confidence": true,
+    "chart_refresh_ms": 1000
+  }
+}

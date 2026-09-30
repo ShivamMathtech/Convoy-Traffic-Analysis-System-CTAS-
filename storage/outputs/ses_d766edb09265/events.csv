@@ -1,0 +1,3 @@
+timestamp,event_type,severity,track_id,description
+0.0,Analysis Started,INFO,,Analysis started on F:\pj\CTAS_Production\CTAS\storage\uploads\6ad9fd091be9483abebee32b8fcf7721.mp4
+1.66,Analysis Stopped,INFO,,Analysis stopped

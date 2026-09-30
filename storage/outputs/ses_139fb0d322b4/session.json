@@ -1,0 +1,333 @@
+{
+  "session_id": "ses_139fb0d322b4",
+  "state": "STOPPING",
+  "frames": 240,
+  "processed_frames": 31,
+  "dropped_frames": 0,
+  "inference_fps": 16.247173671577666,
+  "calibrated": false,
+  "calibration": {
+    "image_points": [],
+    "world_points": [],
+    "units": "pixels",
+    "homography": null,
+    "is_calibrated": false
+  },
+  "lanes": [
+    {
+      "id": "1",
+      "name": "Lane 1",
+      "polygon": [
+        [
+          0.0,
+          0
+        ],
+        [
+          426.6666666666667,
+          0
+        ],
+        [
+          426.6666666666667,
+          720
+        ],
+        [
+          0.0,
+          720
+        ]
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Lane 2",
+      "polygon": [
+        [
+          426.6666666666667,
+          0
+        ],
+        [
+          853.3333333333334,
+          0
+        ],
+        [
+          853.3333333333334,
+          720
+        ],
+        [
+          426.6666666666667,
+          720
+        ]
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Lane 3",
+      "polygon": [
+        [
+          853.3333333333334,
+          0
+        ],
+        [
+          1280.0,
+          0
+        ],
+        [
+          1280.0,
+          720
+        ],
+        [
+          853.3333333333334,
+          720
+        ]
+      ]
+    }
+  ],
+  "analytics": {
+    "vehicle_count_over_time": [
+      {
+        "t": 0.0,
+        "v": 0
+      },
+      {
+        "t": 1.0,
+        "v": 0
+      },
+      {
+        "t": 2.0,
+        "v": 0
+      },
+      {
+        "t": 3.0,
+        "v": 0
+      },
+      {
+        "t": 4.0,
+        "v": 0
+      },
+      {
+        "t": 5.0,
+        "v": 0
+      },
+      {
+        "t": 6.0,
+        "v": 0
+      },
+      {
+        "t": 7.0,
+        "v": 0
+      },
+      {
+        "t": 8.0,
+        "v": 0
+      },
+      {
+        "t": 9.0,
+        "v": 0
+      },
+      {
+        "t": 10.0,
+        "v": 0
+      }
+    ],
+    "average_speed_over_time": [
+      {
+        "t": 0.0,
+        "v": null
+      },
+      {
+        "t": 1.0,
+        "v": null
+      },
+      {
+        "t": 2.0,
+        "v": null
+      },
+      {
+        "t": 3.0,
+        "v": null
+      },
+      {
+        "t": 4.0,
+        "v": null
+      },
+      {
+        "t": 5.0,
+        "v": null
+      },
+      {
+        "t": 6.0,
+        "v": null
+      },
+      {
+        "t": 7.0,
+        "v": null
+      },
+      {
+        "t": 8.0,
+        "v": null
+      },
+      {
+        "t": 9.0,
+        "v": null
+      },
+      {
+        "t": 10.0,
+        "v": null
+      }
+    ],
+    "spacing_over_time": [
+      {
+        "t": 0.0,
+        "v": null
+      },
+      {
+        "t": 1.0,
+        "v": null
+      },
+      {
+        "t": 2.0,
+        "v": null
+      },
+      {
+        "t": 3.0,
+        "v": null
+      },
+      {
+        "t": 4.0,
+        "v": null
+      },
+      {
+        "t": 5.0,
+        "v": null
+      },
+      {
+        "t": 6.0,
+        "v": null
+      },
+      {
+        "t": 7.0,
+        "v": null
+      },
+      {
+        "t": 8.0,
+        "v": null
+      },
+      {
+        "t": 9.0,
+        "v": null
+      },
+      {
+        "t": 10.0,
+        "v": null
+      }
+    ],
+    "group_count_over_time": [
+      {
+        "t": 0.0,
+        "v": 0
+      },
+      {
+        "t": 1.0,
+        "v": 0
+      },
+      {
+        "t": 2.0,
+        "v": 0
+      },
+      {
+        "t": 3.0,
+        "v": 0
+      },
+      {
+        "t": 4.0,
+        "v": 0
+      },
+      {
+        "t": 5.0,
+        "v": 0
+      },
+      {
+        "t": 6.0,
+        "v": 0
+      },
+      {
+        "t": 7.0,
+        "v": 0
+      },
+      {
+        "t": 8.0,
+        "v": 0
+      },
+      {
+        "t": 9.0,
+        "v": 0
+      },
+      {
+        "t": 10.0,
+        "v": 0
+      }
+    ],
+    "class_counts_over_time": {},
+    "total_entered": 0
+  },
+  "settings": {
+    "model": {
+      "model_path": "F:\\pj\\CTAS_Production\\models\\default_model.pt",
+      "device": "cpu",
+      "imgsz": 640,
+      "conf": 0.35,
+      "iou": 0.45
+    },
+    "tracker": {
+      "name": "bytetrack",
+      "max_age": 30,
+      "min_hits": 3,
+      "iou_threshold": 0.3,
+      "low_conf_threshold": 0.1
+    },
+    "video": {
+      "mode": "realtime",
+      "frame_interval": 1,
+      "max_width": 1280
+    },
+    "calibration": {
+      "units": "pixels",
+      "image_points": [],
+      "world_points": []
+    },
+    "groups": {
+      "dmax": 35.0,
+      "hmax_deg": 15.0,
+      "tmin_sec": 2.0,
+      "min_vehicles": 2,
+      "enabled": true
+    },
+    "events": {
+      "stopped_speed_kmh": 2.0,
+      "stopped_seconds": 3.0,
+      "spacing_warn_m": 5.0,
+      "congestion_density": 25,
+      "congestion_seconds": 10.0,
+      "enabled": {
+        "vehicle_entered": true,
+        "vehicle_exited": true,
+        "lane_change": true,
+        "group_formation": true,
+        "stopped_vehicle": true,
+        "spacing_threshold": true,
+        "congestion": true,
+        "stream": true
+      }
+    },
+    "storage": {
+      "output_dir": "F:\\pj\\CTAS_Production\\CTAS\\storage\\outputs",
+      "auto_cleanup_days": 30
+    },
+    "ui": {
+      "show_trajectories": true,
+      "trajectory_seconds": 5.0,
+      "show_labels": true,
+      "show_confidence": true,
+      "chart_refresh_ms": 1000
+    }
+  }
+}
