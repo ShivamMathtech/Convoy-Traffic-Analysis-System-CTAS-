@@ -1,0 +1,22 @@
+# CTAS backend dependencies (Python 3.11+)
+fastapi>=0.110
+uvicorn[standard]>=0.29
+opencv-python-headless>=4.9
+numpy>=1.26
+pandas>=2.0
+pydantic>=2.6
+sqlalchemy>=2.0
+psutil>=5.9
+reportlab>=4.0
+python-multipart>=0.0.9
+pyyaml>=6.0
+
+# --- AI / computer vision (optional but recommended for real detection) ---
+# ultralytics pulls in torch (~2 GB). Install only if you want the YOLO detector:
+#   pip install ultralytics
+# Without it the backend still runs; the detector reports MODEL NOT AVAILABLE
+# and the Demo source can be used to exercise the full pipeline.
+
+# --- development / testing ---
+pytest>=8.0
+httpx>=0.27
